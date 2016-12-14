@@ -3,23 +3,20 @@
 
 library(zoo)
 library(plyr)
+library(tools)
 
-curr.wd <- (paste("O:/TechnicalServices/Env Monitoring Program/MON DATA",
-            "Archived Rainfall/2016-12 Processed HSP Files",
-            sep = "/"))
-
-files.in <- list.files(path = curr.wd,
+files.in <- list.files(path = "results",
                        pattern="*_15m.csv")
 
 # Get station codes from file names
 files.split <- strsplit(files.in, "_")
 files.code <- unlist(files.split)[2*(1:length(files.in))-1]
 
-files.fullpath <- paste(curr.wd, files.in, sep = "/")
+files.fullpath <- paste("results", files.in, sep = "/")
 
 # There is also a list of annotations to the data in .csv format
 annotations.col <- c("character", "character", "character", "character", "character")
-annotations <- read.csv(paste(curr.wd,
+annotations <- read.csv(paste("results",
                               "annotations.csv",
                               sep = "/"),
                         colClasses = annotations.col,
@@ -100,7 +97,7 @@ for (file in files.in) {
   }
   
   write.csv(x = data.filled,
-            file = paste(curr.wd, 
+            file = paste("results", 
                          "/",
                          files.code[i],
                          "_filled.csv",

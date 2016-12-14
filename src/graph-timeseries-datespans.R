@@ -3,21 +3,17 @@
 # Pulling out monitoring time spans from csv files
 
 library(readr)
+library(tools)
+library(ggplot2)
 
-curr.wd <- (paste("O:/TechnicalServices/Env Monitoring Program/MON DATA",
-            "Archived Rainfall/2016-12 Processed HSP Files",
-            sep = "/"))
-
-#files.in <- list.files(path = curr.wd,
-#                       pattern="*_15m.csv")
-files.in <- list.files(path = curr.wd,
+files.in <- list.files(path = "results",
                        pattern="*_filled.csv")
 
 # Get station codes from file names
 files.split <- strsplit(files.in, "_")
 files.code <- unlist(files.split)[2*(1:length(files.in))-1]
 
-files.fullpath <- paste(curr.wd, files.in, sep = "/")
+files.fullpath <- paste("results", files.in, sep = "/")
 
 # Open file and pull out just the data we need
 findevents <- function(filename) {
@@ -76,7 +72,7 @@ ggplot(data = events) +
   geom_line(aes(x = datetime, y = stations, group = stations, color = flag),
             size = 3) +
   #geom_point(aes(x = ts, y = stations, color = flag), size = 2) +
-  scale_color_manual(values = c("#95E1D3", "#F38181", "#FCE38A")) +
+  scale_color_manual(values = c("#95E1D3","#FCE38A", "#F38181")) +
   labs(title = "Precipitation Station Data Collection", 
        subtitle = paste("Made by Nat Kale on", date()),
        x = "Date", 
