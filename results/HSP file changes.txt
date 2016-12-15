@@ -1,0 +1,7 @@
+PBL1.HSP: Fixed lines 2413 through 2449 by changing 95 to 96.
+PBL1.HSP: Fixed lines 4601 through 4719 by changing 00 to 99.
+PDE2.HSP: Fixed lines 2492 through 2591 by changing 98 to 99.
+PEA1.HSP: Fixed lines 2124 through 2157 by changing 95 to 96.
+PSC1.HSP: Fixed lines 940 through 976 by changing 95 to 96.
+PSL1.HSP: Fixed lines 1450 through 1488 by changing 95 to 96.
+PWL3.HSP: Fixed lines 1256 through 1284 by changing 95 to 96.
