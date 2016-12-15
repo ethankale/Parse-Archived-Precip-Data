@@ -80,3 +80,8 @@ ggplot(data = events) +
   guides(color = guide_legend(title = "Data Quality")) +
   theme_bw()
 
+ggsave("Rainfall Data Integrity.pdf", 
+       path = "results/",
+       plot = last_plot())
+
+

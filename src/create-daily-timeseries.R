@@ -42,9 +42,6 @@ MakeDailyTimeSeries <- function(filename) {
 
 # Do the following with daily data:
 #   Save to a .csv
-#   Compare to the NOAA daily values
-#   Find days with values that don't make sense; meaning, have
-#     a significant deviation from the defined relationship w/ NOAA
 i <- 1
 for (file in files.fullpath) {
   print(files.code[i])

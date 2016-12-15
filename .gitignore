@@ -74,3 +74,8 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+
+# Binary output files
+*.pdf
+*.PDF
