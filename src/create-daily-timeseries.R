@@ -26,7 +26,7 @@ MakeDailyTimeSeries <- function(filename) {
   #   Note that R/readr don't do well with converting empty strings,
   #   i.e. "", to factors.
   data.15m$flag[data.15m$flag == ""] <- "Normal"
-  levels <- c("Normal", "EST", "FAIL")
+  levels <- c("Normal", "UNK", "EST", "FAIL")
   data.15m$flag <- parse_factor(data.15m$flag, levels, 
                                 ordered = TRUE)
   

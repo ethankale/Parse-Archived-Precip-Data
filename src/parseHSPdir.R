@@ -59,8 +59,9 @@ for (file.in in files.in) {
   
   # Clean the data a little
   #   NOTE THAT THERE ARE SOMETIMES NOTES IN ROWS IN LIEU OF DATA.
-  #   USING COMPLETE CASES REMOVES THESE NOTES.  MANUAL REVIEW OF
-  #   DATA IS NECESSARY.
+  #   USING COMPLETE CASES REMOVES THESE NOTES.  For this analysis,
+  #   the notes were incorporated back into the workflow manually via the
+  #   annotations.csv file.
   
   for (row in cnames[3:length(cnames)]) {
     #print(row)

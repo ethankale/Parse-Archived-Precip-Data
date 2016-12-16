@@ -26,9 +26,10 @@ findevents <- function(filename) {
   #   Note that R/readr don't do well with converting empty strings,
   #   i.e. "", to factors.
   data$flag[data$flag == ""] <- "Normal"
-  levels <- c("Normal", "EST", "FAIL")
+  levels <- c("Normal", "UNK", "EST", "FAIL")
   data$flag <- parse_factor(data$flag, levels, 
                                 ordered = TRUE)
+  levels(data$flag) <- c("Normal", "Unknown", "Questionable", "Bad")
   
   # Find where the flag changes; that is, a significant event
   #   occurs (begins and ends)
@@ -66,15 +67,14 @@ for (file in files.fullpath) {
 events$station <- as.factor(stations)
 events$datetime <- events$ts
 
-# This plot is automatically generated with the current date & time;
-#   edit the subtitle to change the author.
+# This plot is automatically generated with the current date & time.
 ggplot(data = events) +
   geom_line(aes(x = datetime, y = stations, group = stations, color = flag),
             size = 3) +
   #geom_point(aes(x = ts, y = stations, color = flag), size = 2) +
-  scale_color_manual(values = c("#95E1D3","#FCE38A", "#F38181")) +
+  scale_color_manual(values = c("#CCCCCC","#ffff00", "#ffa600", "#ff0000")) +
   labs(title = "Precipitation Station Data Collection", 
-       subtitle = paste("Made by Nat Kale on", date()),
+       subtitle = paste("Created on", date()),
        x = "Date", 
        y = "Stations") +
   guides(color = guide_legend(title = "Data Quality")) +
