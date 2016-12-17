@@ -43,6 +43,7 @@ rsquared <- c()
 intercept <- c()
 slope <- c()
 days <- c()
+flag.ratio <- c()
 
 # Do the following with each daily .csv:
 #   Compare to the NOAA daily values
@@ -109,6 +110,7 @@ for (file in files.fullpath) {
   intercept <- c(intercept, coef(data.lm)[1])
   slope <- c(slope, coef(data.lm)[2])
   days <- c(days, nrow(data.combined))
+  flag.ratio <- c(flag.ratio, (nrow(data.filter)/nrow(data.daily)))
   
   i <- i+1
 }
@@ -117,7 +119,8 @@ stats.df <- data.frame(station = files.code,
                        rsquared = rsquared,
                        intercept = intercept,
                        slope = slope,
-                       days = days)
+                       days = days,
+                       flag.ratio = flag.ratio)
 
 write.csv(stats.df,
           file = paste("results", "modelStatistics.csv", sep = "/"))
