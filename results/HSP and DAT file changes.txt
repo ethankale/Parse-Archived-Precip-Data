@@ -7,3 +7,4 @@ PSL1.HSP: Fixed lines 1450 through 1488 by changing 95 to 96.
 PWL3.HSP: Fixed lines 1256 through 1284 by changing 95 to 96.
 PDE20100.DAT: Replaced all instances of 1900 with 2000.
 PDE20200.DAT: Replaced all instances of 1900 with 2000.
+PGC1.HSP: Shifted 1995-09-24 through 1995-10-23 data back by 1 day.

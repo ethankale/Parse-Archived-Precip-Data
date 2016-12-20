@@ -44,6 +44,7 @@ intercept <- c()
 slope <- c()
 days <- c()
 flag.ratio <- c()
+years.good.data <- c()
 
 # Do the following with each daily .csv:
 #   Compare to the NOAA daily values
@@ -109,8 +110,17 @@ for (file in files.fullpath) {
   rsquared <- c(rsquared, summary(data.lm)$adj.r.squared)
   intercept <- c(intercept, coef(data.lm)[1])
   slope <- c(slope, coef(data.lm)[2])
-  days <- c(days, nrow(data.combined))
-  flag.ratio <- c(flag.ratio, (nrow(data.filter)/nrow(data.daily)))
+  
+  days.good <- nrow(data.filter)
+  days.total <- nrow(data.daily)
+  days <- c(days, days.total)
+  
+  ratio <- 1 - (days.good/days.total)
+  flag.ratio <- c(flag.ratio, ratio)
+  
+  years.good <- ((days.good/days.total) * days.total) / 365
+  years.good.data <- c(years.good.data, years.good)
+  
   
   i <- i+1
 }
@@ -120,7 +130,8 @@ stats.df <- data.frame(station = files.code,
                        intercept = intercept,
                        slope = slope,
                        days = days,
-                       flag.ratio = flag.ratio)
+                       percent.bad = flag.ratio,
+                       years.good = years.good.data)
 
 write.csv(stats.df,
           file = paste("results", "modelStatistics.csv", sep = "/"))
