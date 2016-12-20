@@ -1,0 +1,31 @@
+"pde10893.dat"
+"DP-101  : Tipping bucket rain gage recorder"
+"Processed file"
+"File creation date   : 1993/09/15 at 09:26:13"
+"By                   : John "
+"Start date           : 08-05-93-16:35"
+"Interval             : N/A"
+"Preset factor        : 01"
+"Calibration factors: sensor 1 : 1  sensor 2 : 1"
+"Location : Chambers Creek @ Rich Rd"
+"Note : "
+
+"MT" "DY" "YR" "HHMM" "TOTAL   "
+
+ 8 16 1993  247        1
+ 8 16 1993  329        2
+ 8 16 1993  338        3
+ 8 16 1993  343        4
+ 8 16 1993  354        5
+ 8 16 1993  405        6
+ 8 16 1993  425        7
+ 8 16 1993  454        8
+ 8 16 1993  519        9
+ 8 16 1993  704       10
+ 8 16 1993  842       11
+ 8 22 1993 1823       12
+ 8 22 1993 1844       13
+ 8 23 1993  143       14
+ 8 23 1993  721       15
+ 8 23 1993  800       16
+ 8 23 1993  844       17

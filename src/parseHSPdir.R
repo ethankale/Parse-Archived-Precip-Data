@@ -16,12 +16,8 @@
 
 library(reshape2)
 
-curr.wd <- (paste("O:/TechnicalServices/Env Monitoring Program/MON DATA",
-            "Archived Rainfall/2016-12 Processed HSP Files",
-            sep = "/"))
-
 # Note caps.  This will only match *.HSP, NOT *.hsp.
-files.in <- list.files(path = curr.wd,
+files.in <- list.files(path = "data",
                        pattern="*.HSP")
 
 # For some reason there's a leading space in most of these files;
@@ -36,21 +32,15 @@ cnames <- c("ignore","date", "card",
 
 
 for (file.in in files.in) {
-  file.out.monthly <- paste(curr.wd,
-                            "/",
-                            strsplit(file.in, "[.]")[[1]][1], 
-                            "_monthlysum",
-                            ".csv", 
-                            sep="")
-  file.out.15m <- paste(curr.wd,
-                        "/",
-                        strsplit(file.in, "[.]")[[1]][1], 
-                        "_15m",
-                        ".csv", 
-                        sep="")
+  file.out.monthly <- paste0("results/",
+                             strsplit(file.in, "[.]")[[1]][1], 
+                             "_monthlysum.csv")
+  file.out.15m <- paste0("results/",
+                         strsplit(file.in, "[.]")[[1]][1], 
+                         "_15m.csv")
 
   
-  precip.raw <- read.fwf(paste(curr.wd, file.in, sep = "/"),
+  precip.raw <- read.fwf(paste0("data/", file.in),
                          widths = widths,
                          header = FALSE,
                          dec = ".",

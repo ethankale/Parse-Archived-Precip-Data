@@ -5,3 +5,5 @@ PEA1.HSP: Fixed lines 2124 through 2157 by changing 95 to 96.
 PSC1.HSP: Fixed lines 940 through 976 by changing 95 to 96.
 PSL1.HSP: Fixed lines 1450 through 1488 by changing 95 to 96.
 PWL3.HSP: Fixed lines 1256 through 1284 by changing 95 to 96.
+PDE20100.DAT: Replaced all instances of 1900 with 2000.
+PDE20200.DAT: Replaced all instances of 1900 with 2000.

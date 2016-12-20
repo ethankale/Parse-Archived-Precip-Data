@@ -3,8 +3,40 @@
 #  Be sure to set the working directory to the root
 #  directory of this project before running.
 
+# Loading the libraries in order here.  In particular,
+#   issues can arise if you load plyr after dplyr.
+
+# pkg <- c("plyr",
+#          "dplyr",
+#          "readr",
+#          "stringr",
+#          "reshape2",
+#          "zoo",
+#          "tools",
+#          "ggplot2",
+#          "cowplot",
+#          "broom")
+# 
+# lapply(rev(paste0("package:", pkg)), detach, character.only = TRUE, unload = TRUE)
+
+library(plyr)
+library(dplyr)
+library(readr)
+library(stringr)
+library(reshape2)
+library(zoo)
+library(tools)
+library(ggplot2)
+library(cowplot)
+library(broom)
+
 # Parse the .HSP files, and create the 15 minute (and monthly) .csv files
 source("src/parseHSPdir.R")
+
+# Parse the .DAT files.  This will overwrite some of the 15 minute data files.
+#   Specifically, PDE1 and PDE2, where there is more information in the .DAT
+#   files than in the .HSP files.
+source("src/dat-to-csv.R")
 
 # Create filled .csv files, where filled means gaps are converted to zeros.
 #   Also use the annotations.csv file to add flags to the filled .csv files.

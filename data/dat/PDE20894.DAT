@@ -1,0 +1,24 @@
+"Pde20894.DAT"
+"DP-101  : Tipping bucket rain gage recorder"
+"Processed file"
+"File creation date   : 1994/09/26 at 09:56:44"
+"By                   : christensen"
+"Start date           : 08-11-94-08:20"
+"Interval             : N/A"
+"Preset factor        : 01"
+"Calibration factors: sensor 1 : 1  sensor 2 : 1"
+"Location : test"
+"Note : "
+
+"MT" "DY" "YR" "HHMM" "TOTAL   "
+
+ 8 12 1994 1439        1
+ 8 12 1994 1439        2
+ 8 12 1994 1439        3
+ 8 21 1994 1654        4
+ 8 21 1994 1657        5
+ 8 21 1994 1701        6
+ 8 21 1994 1713        7
+ 8 22 1994 1738        8
+ 8 23 1994  740        9
+ 8 26 1994  716       10

@@ -7,5 +7,5 @@ This project contains the data and scripts necessary to transform Thurston Count
 
 Set your working directory to the project root and run main.R to run the analysis.
 
-Contact Nat Kale (kalen@co.thurston.wa.us | orcid.org/0000-0001-5004-8983) at Thurston County for more information.
+Contact Nat Kale (kalen@co.thurston.wa.us | [![ORCID](orcid.org/0000-0001-5004-8983)]) at Thurston County for more information.
 

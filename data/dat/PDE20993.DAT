@@ -1,0 +1,28 @@
+"pde20993.dat"
+"DP-101  : Tipping bucket rain gage recorder"
+"Processed file"
+"File creation date   : 1993/10/08 at 15:26:40"
+"By                   : John "
+"Start date           : 09-09-93-10:58"
+"Interval             : N/A"
+"Preset factor        : 01"
+"Calibration factors: sensor 1 : 1  sensor 2 : 1"
+"Location : Lake Lawrence"
+"Note : "
+
+"MT" "DY" "YR" "HHMM" "TOTAL   "
+
+ 9 11 1993 1255        1
+10  5 1993 1007        2
+10  5 1993 2258        3
+10  5 1993 2318        4
+10  6 1993    1        5
+10  6 1993  523        6
+10  6 1993  627        7
+10  6 1993 1631        8
+10  6 1993 1700        9
+10  7 1993  118       10
+10  7 1993  149       11
+10  7 1993  205       12
+10  7 1993  215       13
+10  7 1993  324       14

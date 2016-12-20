@@ -1,0 +1,21 @@
+"PDE20499.DAT"
+"DP-101  : Tipping bucket rain gage recorder"
+"Processed file"
+"File creation date   : 1999/05/14 at 14:51:40"
+"By                   : DARIN"
+"Start date           : 04-02-99-11:15"
+"Interval             : N/A"
+"Preset factor        : 01"
+"Calibration factors: sensor 1 : 1  sensor 2 : 1"
+"Location : LAKE LAWRENCE"
+"Note : FUNNEL PLUGGED"
+
+"MT" "DY" "YR" "HHMM" "TOTAL   "
+
+ 4  3 1999  723        1
+ 4 19 1999 1850        2
+ 4 24 1999 1504        3
+ 4 26 1999 1433        4
+ 4 29 1999 1933        5
+ 4 30 1999  252        6
+ 5  1 1999 2131        7

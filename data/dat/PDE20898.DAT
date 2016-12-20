@@ -1,0 +1,23 @@
+"PDE20898.DAT"
+"DP-101  : Tipping bucket rain gage recorder"
+"Processed file"
+"File creation date   : 1998/09/10 at 08:30:49"
+"By                   : Gary"
+"Start date           : 08-05-98-14:30"
+"Interval             : N/A"
+"Preset factor        : 01"
+"Calibration factors: sensor 1 : 1  sensor 2 : 1"
+"Location : LAKE LAWRENCE BOAT LAUNCH"
+"Note : "
+
+"MT" "DY" "YR" "HHMM" "TOTAL   "
+
+ 8 16 1998 1314        1
+ 8 16 1998 1317        2
+ 8 16 1998 1319        3
+ 8 16 1998 1320        4
+ 8 16 1998 1321        5
+ 8 16 1998 1326        6
+ 8 16 1998 1332        7
+ 8 16 1998 1337        8
+ 8 17 1998 2100        9
