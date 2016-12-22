@@ -6,19 +6,6 @@
 # Loading the libraries in order here.  In particular,
 #   issues can arise if you load plyr after dplyr.
 
-# pkg <- c("plyr",
-#          "dplyr",
-#          "readr",
-#          "stringr",
-#          "reshape2",
-#          "zoo",
-#          "tools",
-#          "ggplot2",
-#          "cowplot",
-#          "broom")
-# 
-# lapply(rev(paste0("package:", pkg)), detach, character.only = TRUE, unload = TRUE)
-
 library(plyr)
 library(dplyr)
 library(readr)
@@ -29,6 +16,7 @@ library(tools)
 library(ggplot2)
 library(cowplot)
 library(broom)
+library(lubridate)
 
 # Parse the .HSP files, and create the 15 minute (and monthly) .csv files
 source("src/parseHSPdir.R")
