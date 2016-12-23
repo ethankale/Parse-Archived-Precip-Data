@@ -75,10 +75,13 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# windows temp files
+# Windows temp files
 ~*
 *~
 
 # Binary output files
 *.pdf
 *.PDF
+
+# Outputs from processing
+/results/plots

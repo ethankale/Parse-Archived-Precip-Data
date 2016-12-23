@@ -10,6 +10,7 @@ library(dplyr)
 library(ggplot2)
 library(cowplot)
 library(broom)
+library(lubridate)
 
 files.in <- list.files(path = "results",
                        pattern="*_daily.csv")
@@ -75,6 +76,38 @@ for (file in files.fullpath) {
   cutoff <- quantile(df$.cooksd, 0.99)
   data.questionable <- data.combined[data.combined$cooksd >= cutoff,]
   data.questionable$tc.station <- files.code[i]
+  
+  # Plots
+  
+  # What do the data look like around each of the questionable
+  #   data points?
+  
+  j <- 1
+  while (j <= nrow(data.questionable)) {
+    
+    .date <- data.questionable$days[j]
+    .date.begin <- .date - days(30)
+    .date.end <- .date + days(30)
+    
+    data.filtered <- data.combined %>%
+      filter(days >= .date.begin & days <= .date.end)
+    
+    context.plot <- ggplot(data.filtered) + 
+      geom_line(aes(x = days, y = PRCP), color = "red") +
+      geom_line(aes(x = days, y = total.precip), color = "black") + 
+      geom_point(aes(x = days, y = PRCP), color = "red") +
+      geom_point(aes(x = days, y = total.precip), color = "black") + 
+      labs(title = paste0("Precipitation - NOAA vs. ", sitecode),
+           x = "Date",
+           y = "Precipitation (inches)")
+    
+    ggsave(paste0("results/plots/", sitecode, " ", .date, ".png"),
+           width = 7,
+           height = 5)
+    
+    
+    j <- j+1
+  }
   
   histogram <- ggplot(df, aes(x = .resid)) +
                       geom_histogram(binwidth = 0.05) + 
