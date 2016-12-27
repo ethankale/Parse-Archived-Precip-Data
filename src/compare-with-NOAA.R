@@ -38,6 +38,13 @@ if (!exists("flags.to.use")) {
   flags.to.use <- c("Normal")
 }
 
+# Start by emptying the directory of working plots.  Not great
+#   to do this before creating the new plots, but they're not
+#   intended to be final products, just review aids (they don't
+#   even get checked into Git).
+
+do.call(file.remove, list(list.files("./results/plots", full.names = TRUE)))
+
 # Lists of valuable stats, to be complied to a data frame
 #   at the end of the loop.
 rsquared <- c()
@@ -102,6 +109,7 @@ for (file in files.fullpath) {
       geom_point(aes(x = days, y = PRCP), color = "red") +
       geom_point(aes(x = days, y = total.precip), color = "black") +
       labs(title = paste0("Precipitation - NOAA vs. ", sitecode, " - ", .date),
+           subtitle = now(),
            x = "Date",
            y = "Precipitation (inches)")
     

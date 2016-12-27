@@ -2,3 +2,8 @@ station,begin,end,offset.days,note
 PPE1,1999-11-02,1999-12-04,2,"Beginning of the shift with respect to NOAA is very clear; end is less clear, should maybe be flagged."
 PGC1,1995-09-24,1995-10-23,-1,Days of empty records both before and after shift; shouldn't be any issues with shift.
 PBL2,1997-04-05,1997-05-01,3,Both beginning and end are a little vague.
+PGC1,1996-11-21,1996-12-30,-2,Begin and end of shift fairly clear; lines up with one specific DAT file in the archive.
+PSC1,1996-06-07,1996-08-05,2,"Begin and end of shift are all zeros for both NOAA and PSC1, so should be minimal quality issues."
+PWD1,1998-02-06,1998-02-27,4,Corresponds perfectly with a single .DAT file - PWD10298.DAT.
+PWL1,1995-02-08,1995-03-07,1,Corresponds perfectly with a single .DAT file - PWL10295.DAT.
+PWL1,1997-01-06,1997-01-31,3,Corresponds perfectly with a single .DAT file - PWL10127.DAT

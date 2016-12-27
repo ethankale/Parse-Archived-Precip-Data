@@ -2,7 +2,6 @@
 # Pulling out monitoring time spans from csv files
 
 library(zoo)
-library(plyr)
 library(dplyr)
 library(tools)
 library(lubridate)
@@ -47,11 +46,8 @@ filledTS <- function(data) {
   
   timeseries.df <- data.frame(list(ts = timeseries))
   
-  timeseries.joined <- join(x = timeseries.df,
-                            y = data,
-                            by = 'ts',
-                            type = 'left',
-                            match = 'first')
+  timeseries.joined <- timeseries.df %>% left_join(data,
+    by = 'ts')
   
   timeseries.trimmed <- timeseries.joined[,c("ts", "precip.in")]
   timeseries.trimmed$precip.in[which(is.na(timeseries.trimmed$precip.in))] <- 0

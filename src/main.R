@@ -6,7 +6,6 @@
 # Loading the libraries in order here.  In particular,
 #   issues can arise if you load plyr after dplyr.
 
-library(plyr)
 library(dplyr)
 library(readr)
 library(stringr)
