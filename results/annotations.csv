@@ -1,4 +1,5 @@
 station,begin,end,flag,note
+PBL1,1992-01-13,1992-01-26,UNK,"These data appear shifted, but there isn't enough data there to be sure, and begin-end dates aren't certain."
 PBL1,1996-12-30,1997-01-09,FAIL,"See line 3,255 in PBL1.HSP.  Chip ran out of space.  Rainfall 1996-11-20 to end = 25.26 inches."
 PBL1,1997-04-01,1997-05-02,FAIL,"See line 3,541 in PBL1.HSP.  Chip ran out of space.  Rainfall between begin and end = 5.98 inches."
 PBL1,1998-11-04,1998-12-09,FAIL,"See line 4,517 in PBL1.HSP.  Note just says 'data bad'."
@@ -92,4 +93,4 @@ PDE2,1997-12-27,1998-01-12,UNK,"DAT file shows low rainfall, while NOAA recorded
 PDE2,1998-03-14,1998-03-28,UNK,"DAT file shows zero rainfall; NOAA records a significant event.  Most likely chip filled up, though plugging is possible."
 PDE2,2000-01-08,2000-02-07,UNK,DAT file shows low rainfall; NOAA records multiple significant events.  Probably funnel clogged.
 PDE2,2000-03-28,2000-10-21,UNK,"From end of March through last recorded date, PDE2 apears to have been plugged."
-,,,,
+PDE1,1993-05-30,1995-06-04,UNK,".DAT files make it appear that funnel was partially plugged through this time, but no notes recorded."

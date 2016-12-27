@@ -86,18 +86,22 @@ for (file in files.fullpath) {
   while (j <= nrow(data.questionable)) {
     
     .date <- data.questionable$days[j]
-    .date.begin <- .date - days(30)
-    .date.end <- .date + days(30)
+    .date.begin <- .date - months(1)
+    .date.end <- .date + months(1)
     
     data.filtered <- data.combined %>%
       filter(days >= .date.begin & days <= .date.end)
     
+    # This is a little more complicated than usual because the data are
+    #   in wide format, instead of long - the NOAA and tc station values
+    #   are in their own columns, instead of being in the same column with
+    #   a separate column tagging which values are for which station.
     context.plot <- ggplot(data.filtered) + 
       geom_line(aes(x = days, y = PRCP), color = "red") +
       geom_line(aes(x = days, y = total.precip), color = "black") + 
       geom_point(aes(x = days, y = PRCP), color = "red") +
-      geom_point(aes(x = days, y = total.precip), color = "black") + 
-      labs(title = paste0("Precipitation - NOAA vs. ", sitecode),
+      geom_point(aes(x = days, y = total.precip), color = "black") +
+      labs(title = paste0("Precipitation - NOAA vs. ", sitecode, " - ", .date),
            x = "Date",
            y = "Precipitation (inches)")
     

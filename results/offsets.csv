@@ -1,3 +1,4 @@
 station,begin,end,offset.days,note
 PPE1,1999-11-02,1999-12-04,2,"Beginning of the shift with respect to NOAA is very clear; end is less clear, should maybe be flagged."
 PGC1,1995-09-24,1995-10-23,-1,Days of empty records both before and after shift; shouldn't be any issues with shift.
+PBL2,1997-04-05,1997-05-01,3,Both beginning and end are a little vague.
