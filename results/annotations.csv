@@ -15,7 +15,7 @@ PBL2,1997-06-23,1997-07-06,FAIL,"See line 1,898 in PBL2.HSP.  Clogged funnel."
 PBL2,1998-11-25,1998-12-10,FAIL,"See line 2,936 in PBL2.HSP.  Chip ran out of space; total rainfall begin through end = 9.11 inches."
 PBL2,1999-01-29,1999-02-25,FAIL,"See line 3,135 in PBL2.HSP.  Chip ran out of space; total rainfall from begin to end = 21.93 inches."
 PBL2,1999-10-04,1999-11-04,FAIL,"See line 3,532 in PBL2.HSP.  Plugged funnel.  Begin is 1 month before assumed field visit."
-PDE1,1993-05-30,1995-06-04,UNK,".DAT files make it appear that funnel was partially plugged through this time, but no notes recorded."
+PDE1,1993-05-30,1993-06-04,UNK,".DAT files make it appear that funnel was partially plugged through this time, but no notes recorded."
 PDE1,1994-10-01,1994-11-07,UNK,"Nothing recorded in HSP file.  No data recorded for this time span, despite rainfall at comparable sites.  Probably chip ran out of space."
 PDE1,1995-06-07,1995-08-17,FAIL,See line 491 in PDE1.HSP.  Data logger problems & missing data.  Note in file doesn't provide more detail.
 PDE2,1995-06-06,1995-09-26,FAIL,"See lines 560 and 576 in PDE2.HSP.  Missing funnel, missing data."

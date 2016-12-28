@@ -82,6 +82,9 @@ $RECYCLE.BIN/
 # Binary output files
 *.pdf
 *.PDF
+*.xlsx
 
 # Outputs from processing
 /results/plots
+
+
