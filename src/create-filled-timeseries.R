@@ -125,7 +125,7 @@ for (file in files.in) {
   
   
   
-  # Write the 
+  # Write the final result
   write.csv(x = data.filled,
             file = paste0("results/",
                          files.code[i],

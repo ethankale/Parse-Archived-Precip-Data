@@ -74,13 +74,13 @@ ggplot(data = events) +
   #geom_point(aes(x = ts, y = stations, color = flag), size = 2) +
   scale_color_manual(values = c("#CCCCCC","#ffff00", "#ffa600", "#ff0000")) +
   labs(title = "Precipitation Station Data Collection", 
-       #subtitle = paste("Created on", date()),
+       subtitle = paste("Created on", now()),
        x = "Date", 
        y = "Stations") +
   guides(color = guide_legend(title = "Data Quality")) +
   theme_bw()
 
-ggsave("Rainfall Data Integrity.png", 
+ggsave("Rainfall Data Integrity.pdf", 
        path = "results/",
        plot = last_plot())
 

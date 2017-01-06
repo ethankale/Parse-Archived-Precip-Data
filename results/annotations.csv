@@ -1,5 +1,7 @@
 station,begin,end,flag,note
 PBL1,1992-01-13,1992-01-26,UNK,"These data appear shifted, but there isn't enough data there to be sure, and begin-end dates aren't certain."
+PBL1,1992-01-23,1992-01-23,UNK,"Unknown issue.  NOAA, PPE1, and PWD1 all record significant rainfall on this day; PBL1 records none."
+PBL1,1995-10-27,1995-12-09,UNK,"Nothing recorded in HSP file.  No data recorded for this time span, despite rainfall at comparable sites.  Probably chip ran out of space."
 PBL1,1996-12-30,1997-01-09,FAIL,"See line 3,255 in PBL1.HSP.  Chip ran out of space.  Rainfall 1996-11-20 to end = 25.26 inches."
 PBL1,1997-04-01,1997-05-02,FAIL,"See line 3,541 in PBL1.HSP.  Chip ran out of space.  Rainfall between begin and end = 5.98 inches."
 PBL1,1998-11-04,1998-12-09,FAIL,"See line 4,517 in PBL1.HSP.  Note just says 'data bad'."
@@ -18,19 +20,31 @@ PBL2,1999-10-04,1999-11-04,FAIL,"See line 3,532 in PBL2.HSP.  Plugged funnel.  B
 PDE1,1993-05-30,1993-06-04,UNK,".DAT files make it appear that funnel was partially plugged through this time, but no notes recorded."
 PDE1,1994-10-01,1994-11-07,UNK,"Nothing recorded in HSP file.  No data recorded for this time span, despite rainfall at comparable sites.  Probably chip ran out of space."
 PDE1,1995-06-07,1995-08-17,FAIL,See line 491 in PDE1.HSP.  Data logger problems & missing data.  Note in file doesn't provide more detail.
+PDE1,1995-09-28,1995-12-10,FAIL,See lines 541 and 571 in PDE1.HSP.  Funnel missing twice in a row - data through entire span is highly questionable.
+PDE1,1995-10-25,1995-12-12,UNK,"Nothing recorded in HSP file.  No data recorded for this time span, despite rainfall at comparable sites.  Probably chip ran out of space."
+PDE1,1996-01-30,1996-02-06,EST,"See line 725 in PDE1.HSP.  Freezing temperatures; note doesn't make it clear if that caused a malfunction, or just expected lack of rain."
+PDE1,1996-12-31,1996-01-09,UNK,DAT file data shows zero rainfall; significantly different from NOAA rainfall.  Probably chip ran out of space.
+PDE2,1992-01-27,1992-12-04,UNK,DAT file shows zero rainfall for most of this nearly year-long span.  Probably chip ran out of space.
 PDE2,1995-06-06,1995-09-26,FAIL,"See lines 560 and 576 in PDE2.HSP.  Missing funnel, missing data."
+PDE2,1995-11-26,1995-12-12,UNK,"DAT file shows low or zero rainfall, while NOAA records significant rainfall.  Possible that funnel clogged (plus maybe chip ran out of space)."
 PDE2,1996-07-17,1996-09-09,EST,"See line 1,131 in PDE2.HSP. Sabotaged bucket."
 PDE2,1996-11-22,1997-01-09,FAIL,"See line 1,465 in PDE2.HSP.  Chip ran out of space.  Rainfall 1996-11-22 through 1997-01-08 was 20.82 inches."
+PDE2,1997-02-02,1997-03-05,UNK,"DAT file shows low or zero rainfall, while NOAA records significant rainfall.  Possible that funnel clogged (plus maybe chip ran out of space)."
 PDE2,1997-04-15,1997-06-06,FAIL,"See line 1,757 in PDE2.HSP.  Clogged funnel; note says through May, but data indicates earlier as well."
 PDE2,1997-09-01,1997-10-01,FAIL,"See line 1,853 in PDE2.HSP.  Note could mean that the entire year 1997 data are flawed; needs to be examined."
 PDE2,1997-11-01,1997-12-04,EST,"See line 1,928 in PDE2.HSP.  Clogged funnel; guessing at begin date."
+PDE2,1998-03-14,1998-03-28,UNK,"DAT file shows zero rainfall; NOAA records a significant event.  Most likely chip filled up, though plugging is possible."
 PDE2,1998-07-17,1998-08-17,EST,"See line 2,347 in PDE2.HSP.  Tipped funnel; begin date is estimated date of previous site visit."
 PDE2,1998-11-01,1998-12-10,FAIL,"See line 2,426 in PDE2.HSP.  Plugged funnel; note says data lost."
 PDE2,1999-02-07,1999-02-25,FAIL,"See line 2,630 in PDE2.HSP.  Chip ran out of space; total rainfall between begin & end = 5.14 inches"
 PDE2,1999-03-13,1999-04-03,EST,"See line 2,753 in PDE2.HSP.  Plugged funnel; begin date is estimated date of previous site visit."
 PDE2,1999-06-24,1999-08-12,EST,"See line 2,828 in PDE2.HSP.  Plugged funnel; begin date is estimated date of previous site visit."
-PDE2,1999-11-14,1999-11-04,EST,"See line 2,903 in PDE2.HSP.  Plugged funnel; begin date is estimated date of previous site visit."
 PDE2,1999-11-12,1999-12-11,FAIL,"See line 2,941 in PDE2.HSP.  Chip ran out of space, no total rainfall noted"
+PDE2,1999-11-14,1999-11-04,EST,"See line 2,903 in PDE2.HSP.  Plugged funnel; begin date is estimated date of previous site visit."
+PDE2,2000-01-08,2000-02-07,UNK,DAT file shows low rainfall; NOAA records multiple significant events.  Probably funnel clogged.
+PDE2,2000-03-28,2000-10-21,UNK,"From end of March through last recorded date, PDE2 apears to have been plugged."
+PEA1,1992-11-14,1992-11-25,UNK,"Significant rainfall at NOAA, but next to none at PEA1 throughout this span, except one spike that doesn't match.  Plugged, then drained?"
+PEA1,1995-11-22,1995-11-30,UNK,"Nothing in HSP file.  Minimal rainfall in this span, but NOAA & a couple others record rainfall.  Other stations had issues around this time.  Plugged?"
 PEA1,1996-11-01,1997-02-07,FAIL,"See line 2,658 in PEA1.HSP.  Data pod stolen; no data for Nov - Jan."
 PEA1,1997-05-01,1997-06-01,FAIL,"See line 2,882 in PEA1.HSP.  Misaligned funnel."
 PEA1,1999-02-07,1999-02-25,FAIL,"See line 4,030 in PEA1.HSP.  Chip ran out of space; total rainfall 2/7 through 2/25 (9:15) = 8.53 inches."
@@ -42,15 +56,23 @@ PGC1,1998-12-01,1998-12-09,FAIL,"See line 5,662 in PGC1.HSP.  Chip ran out of sp
 PGC1,1999-02-03,1999-02-25,FAIL,"See line 5,864 in PGC1.HSP.  Chip ran out of space; total rainfall between begin & end = 13.44 inches."
 PGC1,1999-07-12,1999-08-13,FAIL,"See line 6,135 in PGC1.HSP.  Probably chip ran out of space; unclear from note."
 PPE1,1994-10-01,1994-11-16,EST,"See line 3,354 in PPE1.HSP.  Plugged funnel.  The note is in a strange place in the file."
+PPE1,1995-10-10,1995-10-12,UNK,"Recording data, but values differ dramatically from other stations.  Plugged?"
+PPE1,1995-10-25,1995-10-30,UNK,"Recording data, but values differ dramatically from other stations.  Plugged?"
+PPE1,1995-12-03,1995-12-16,UNK,No note in HSP file.  Other stations show significant rainfall.  Probably chip ran out of space.
 PPE1,1996-09-15,1996-09-20,FAIL,"See line 4,599 in PPE1.HSP.  Datapod died & replaced."
 PPE1,1997-01-02,1997-01-09,FAIL,"See line 4,925 in PPE1.HSP.  Chip ran out of space; total rainfall between 1996-11-25 & end = 21.74 inches."
+PPE1,1998-11-13,1998-12-13,UNK,No note in HSP file.  Much lower rainfall throughout this period than comparable stations.  Probably partially plugged.
 PPE1,1999-02-15,1999-02-25,FAIL,"See line 6,419 in PPE1.HSP.  Chip ran out of space; total rainfall between begin & end = 7.24."
 PPE1,1999-10-02,1999-11-02,EST,"See line 6,722 in PPE1.HSP.  Funnel plugged; no other details noted.  Estimated 1 month of questionable data."
+PPE1,1999-11-12,1999-11-12,UNK,"Data recorded 1999-11-11 and 1999-11-13, but nothing on 1999-11-12 despite significant rainfall in comparable stations (NOAA, PGC1)"
 PSC1,1996-12-29,1997-01-08,FAIL,"See line 1,741 in PSC1.HSP.  Chip ran out of space; total rainall between 1996-11-22 & end = 26.25 inches."
+PSC1,1997-10-01,1997-11-01,UNK,"Recording data, but values differ significantly from other comparable stations (NOAA and PEA1).  Partially plugged?"
 PSC1,1998-05-31,1998-07-12,FAIL,"See line 2,882 in PSC1.HSP.  Funnel clogged & data lost."
 PSC1,1999-02-07,1999-02-25,FAIL,"See line 3,317 in PSC1.HSP.  Chip ran out of space; total rainfall between begin & end = 6.66 inches."
 PSC1,1999-07-07,1999-09-24,EST,"Lines 3,610 and 3,611 are empty in PSC1.HSP.  Could be nothing; might indicate gap in data."
+PSL1,1994-02-12,1994-03-06,UNK,Rainfall shows an unnaturally smooth pattern.  Most likely partially plugged.
 PSL1,1995-04-10,1995-05-10,EST,"See line 1,197 in PSL1.HSP.  Funnel clogged, but unclear when.  Estimating 1 month before site visit."
+PSL1,1995-10-21,1995-12-10,UNK,No data or note in HSP file for this period.  Most likely chip ran out of space.
 PSL1,1996-08-05,1996-09-12,FAIL,"See lines 1,941 and 1,966 (original; 1,942 revised) in PSL1.HSP.  Deleted 25 rows of questionable data - datapod battery died."
 PSL1,1996-12-24,1997-01-08,FAIL,"See line 2,295 (revised) in PSL1.HSP.  Chip ran out of space; total rainfall between 1996-11-20 and end = 28.62 inches."
 PSL1,1997-05-31,1997-07-04,EST,See line 2720 (revised) in PSL1.HSP.  Clogged funnel.
@@ -58,39 +80,17 @@ PSL1,1998-11-26,1998-12-09,FAIL,"See line 3,736 (revised) in PSL1.HSP.  Chip ran
 PSL1,1999-01-31,1999-02-25,FAIL,"See line 3,936 (revised) in PSL1.HSP.  Chip ran out of space; total rainfall between begin and end = 23.68 inches."
 PSL1,1999-07-01,1999-08-12,FAIL,"See line 4,237 (revised) in PSL1.HSP.  Funnel plugged; chose FAIL because note says ""no data""."
 PSL1,1999-10-03,1999-11-03,EST,"See line 4,286 (revised) in PSL1.HSP.  Funnel plugged; begin date is 1 month before assumed field visit."
+PWD1,1992-09-23,1992-09-25,UNK,"No data or note in HSP file for a couple of days, despite significant rainfall at comparable sites (NOAA, PEA1, PPE1).  Plugged? Same as PWL1."
+PWD1,1993-01-24,1993-01-26,UNK,"No data or note in HSP file for a couple of days, despite significant rainfall at comparable sites (NOAA, PEA1, PPE1).  Plugged?"
 PWD1,1996-12-31,1997-01-09,FAIL,"See line 5,572 in PWD1.HSP.  Chip ran out of space.  Note in file is garbled; total for January (?) might be 2.00 inches."
 PWD1,1999-02-10,1999-02-25,FAIL,"See line 7,162 in PWD1.HSP.  Chip ran out of space.  Note in file is garbled; looks like total rainfall from begin to end = 7.00 inches."
+PWL1,1990-11-17,1990-11-25,UNK,No data or note in HSP file for this period.  Most likely chip ran out of space.
+PWL1,1992-09-23,1992-09-25,UNK,"No data or note in HSP file for a couple of days, despite significant rainfall at comparable sites (NOAA, PEA1, PPE1).  Plugged?  Same as PDW1."
 PWL1,1995-09-25,1995-10-26,EST,"See line 4,412 in PWL1.HSP.  Funnel clogged.  Single value of 0.79 inches on 10/25 was entire contents of funnel."
 PWL1,1996-08-13,1996-09-13,EST,"See line 5,015 in PWL1.HSP.  Funnel clogged.  Begin date is 1 month before assumed field visit."
+PWL1,1997-01-02,1997-01-07,FAIL,"See line 5,363 in PWL1.HSP.  Chip ran out of space; total rainfall 1996-11-22 through end = 19.54 inches."
 PWL1,1997-04-30,1997-06-03,FAIL,"See line 5,682 in PWL1.HSP.  Funnel clogged.  Note says data not available for May."
 PWL1,1997-09-15,1997-10-15,FAIL,"See line 5,779 in PWL1.HSP.  Funnel clogged.  Note says data not usable; datespan not certain.  Begin is 1 month before field visit."
 PWL1,1997-10-15,1997-12-05,EST,"See line 5,854 in PWL1.HSP.  Funnel not level."
 PWL3,1995-09-25,1995-10-25,EST,"See line 1,100 in PWL3.HSP.  Funnel clogged & full.  Begin date is on month before assumed field visit."
-PBL1,1992-01-23,1992-01-23,UNK,"Unknown issue.  NOAA, PPE1, and PWD1 all record significant rainfall on this day; PBL1 records none."
-PBL1,1995-10-27,1995-12-09,UNK,"Nothing recorded in HSP file.  No data recorded for this time span, despite rainfall at comparable sites.  Probably chip ran out of space."
-PDE1,1995-09-28,1995-12-10,FAIL,See lines 541 and 571 in PDE1.HSP.  Funnel missing twice in a row - data through entire span is highly questionable.
-PDE1,1995-10-25,1995-12-12,UNK,"Nothing recorded in HSP file.  No data recorded for this time span, despite rainfall at comparable sites.  Probably chip ran out of space."
-PEA1,1995-11-22,1995-11-30,UNK,"Nothing in HSP file.  Minimal rainfall in this span, but NOAA & a couple others record rainfall.  Other stations had issues around this time.  Plugged?"
-PPE1,1995-10-10,1995-10-12,UNK,"Recording data, but values differ dramatically from other stations.  Plugged?"
-PPE1,1995-10-25,1995-10-30,UNK,"Recording data, but values differ dramatically from other stations.  Plugged?"
-PPE1,1995-12-03,1995-12-16,UNK,No note in HSP file.  Other stations show significant rainfall.  Probably chip ran out of space.
-PPE1,1998-11-13,1998-12-13,UNK,No note in HSP file.  Much lower rainfall throughout this period than comparable stations.  Probably partially plugged.
-PPE1,1999-11-12,1999-11-12,UNK,"Data recorded 1999-11-11 and 1999-11-13, but nothing on 1999-11-12 despite significant rainfall in comparable stations (NOAA, PGC1)"
-PSC1,1997-10-01,1997-11-01,UNK,"Recording data, but values differ significantly from other comparable stations (NOAA and PEA1).  Partially plugged?"
-PSL1,1995-10-21,1995-12-10,UNK,No data or note in HSP file for this period.  Most likely chip ran out of space.
-PWD1,1992-09-23,1992-09-25,UNK,"No data or note in HSP file for a couple of days, despite significant rainfall at comparable sites (NOAA, PEA1, PPE1).  Plugged? Same as PWL1."
-PWD1,1993-01-24,1993-01-26,UNK,"No data or note in HSP file for a couple of days, despite significant rainfall at comparable sites (NOAA, PEA1, PPE1).  Plugged?"
-PWL1,1990-11-17,1990-11-25,UNK,No data or note in HSP file for this period.  Most likely chip ran out of space.
-PWL1,1992-09-23,1992-09-25,UNK,"No data or note in HSP file for a couple of days, despite significant rainfall at comparable sites (NOAA, PEA1, PPE1).  Plugged?  Same as PDW1."
-PWL1,1997-01-02,1997-01-07,FAIL,"See line 5,363 in PWL1.HSP.  Chip ran out of space; total rainfall 1996-11-22 through end = 19.54 inches."
 PWL3,1995-11-16,1996-01-09,UNK,"Recording data, but values significantly different from comparable sites (NOAA, PPE1).  Maybe partially plugged."
-PDE1,1996-01-30,1996-02-06,EST,"See line 725 in PDE1.HSP.  Freezing temperatures; note doesn't make it clear if that caused a malfunction, or just expected lack of rain."
-PDE2,1992-01-27,1992-12-04,UNK,DAT file shows zero rainfall for most of this nearly year-long span.  Probably chip ran out of space.
-PDE2,1995-11-26,1995-12-12,UNK,"DAT file shows low or zero rainfall, while NOAA records significant rainfall.  Possible that funnel clogged (plus maybe chip ran out of space)."
-PDE2,1997-02-02,1997-03-05,UNK,"DAT file shows low or zero rainfall, while NOAA records significant rainfall.  Possible that funnel clogged (plus maybe chip ran out of space)."
-PDE2,1998-03-14,1998-03-28,UNK,"DAT file shows zero rainfall; NOAA records a significant event.  Most likely chip filled up, though plugging is possible."
-PDE2,2000-01-08,2000-02-07,UNK,DAT file shows low rainfall; NOAA records multiple significant events.  Probably funnel clogged.
-PDE2,2000-03-28,2000-10-21,UNK,"From end of March through last recorded date, PDE2 apears to have been plugged."
-PDE1,1996-12-31,1996-01-09,UNK,DAT file data shows zero rainfall; significantly different from NOAA rainfall.  Probably chip ran out of space.
-PEA1,1992-11-14,1992-11-25,UNK,"Significant rainfall at NOAA, but next to none at PEA1 throughout this span, except one spike that doesn't match.  Plugged, then drained?"
-PSL1,1994-02-12,1994-03-06,UNK,Rainfall shows an unnaturally smooth pattern.  Most likely partially plugged.
